@@ -49,8 +49,14 @@
 
         var geometry = new THREE.PolyhedronGeometry(verticesOfCube, indicesOfFaces, 6, 2);
         material = new THREE.MeshBasicMaterial({
-            color: 0xff0000,
-            wireframe: true
+            color: 0xe74c3c,
+            shading: THREE.FlatShading, 
+            ambient: 0xffffff, 
+            emissive: 0x000000, 
+            specular: 0x111111, 
+            shininess: 100, 
+            wireframe: true, 
+            wireframeLinewidth: 3.66
         });
 
         mesh = new THREE.Mesh(geometry, material);
@@ -74,8 +80,9 @@
 				cameraControls.update();
 
 				// animate mesh
-        mesh.rotation.x += 0.01;
-        mesh.rotation.y += 0.02;
+        mesh.rotation.x += 0.001;
+        mesh.rotation.y += 0.002;
+        mesh.rotation.z += 0.003;
 
         renderer.render(scene, camera);
     }
