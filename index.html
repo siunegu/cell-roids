@@ -4,20 +4,52 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-	<title>THREE test_01</title>
+	<title>THREE test_03 | CELL-ROIDS</title>
 
 	<script src="vendor/three.js/Three.js"></script>
 	<script src="vendor/three.js/Detector.js"></script>
 	<script src="vendor/threex/THREEx.WindowResize.js"></script>
 	<script src="vendor/threex.dragpancontrols.js"></script>
+	<script src="vendor/tween.js"></script>
 
 	<link href='https://fonts.googleapis.com/css?family=Geo:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cutive+Mono:400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-	<div id="container">
+	<span class="start-screen">
 		<span class="title">
-			<h1>EUGENIUS H. LAI</h1>
+			<h1>cell-roids</h1>				
+		</span>		
+		<span class="title-description">
+			<p>Basically a crappy version of asteroids, but with cell-things. By me <a href="http://eugeniuslai.com">@siunegu</a></p>								
+		</span>
+		<span class="start-game">
+			<button>START GAME</button>
+		</span>		
+	</span>
+
+	<span class="game-over">
+		<span class="title">
+			<h1>GAME OVER</h1>			
+		</span>		
+
+		<span class="start-game start-again">
+			<span class="final-score"></span>
+			<button>START AGAIN</button>
+		</span>				
+	</span>
+
+	<span class="controls">
+		<span class="controls-w">w</span>
+		<span class="controls-a">a</span>
+		<span class="controls-s">s</span>
+		<span class="controls-d">d</span>
+	</span>
+
+	<div id="container">
+		<span class="score-board">
+			<span class="score">0</span>
 		</span>
 	</div>	
 
